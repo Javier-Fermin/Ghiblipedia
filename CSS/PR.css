@@ -1,0 +1,262 @@
+/*This is the part that we use to expecify the main background */
+#mainContainer{
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+	background-image:url(../img/porco-rosso-wallpaper-preview.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-size: cover;
+}
+
+#main{
+	display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.315);
+    text-decoration: bold;
+    border: thin solid rgba(0, 0, 0, 0);
+}
+/*This is the part that we use to expecify The color and staff telated with the body for example the background color that the text has  */
+body{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+    background-size: cover;
+}
+/*This is the part that we use to expecify the placement and size of the banner */
+#banner{
+    display: flex;
+    width: 100%;
+    height: 325px;
+    background-image: url(../IMG/BannerPR.png);
+    background-size: cover;
+}
+/*The font family for every paragraph  */
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* CSS for the film trailer*/
+
+iframe{
+    display:block; 
+    margin:0 auto;
+}
+/* CSS for the table*/
+table, th, td {
+    border: 1px solid rgb(43, 42, 42);
+	background-color: rgba(222, 217, 217, 0.542);
+	margin: 0 auto;
+}  
+/*I added that to have more space beetween the border and the text in the table */
+th,td {
+	padding: 10px;
+  text-align: left;
+}  
+/* Everithing with the id menu is to expesify the color size and how the menu work, every page has diferent color for the menu depending on the film's aesthetics*/
+#menu a {
+	color: rgba(0,0,0);
+	text-decoration: none;
+}
+
+#menuBanner {
+	list-style: none;
+}
+
+#menu {
+	background-color: hwb(187 44% 26%);
+	color: #BEBEBE;
+	display: block;
+	height: 50px;
+	margin: 20px auto;
+	width: 100%;
+}
+
+
+
+#menu li {
+	float: left;
+	height: 100%;
+	width: 33.3333%;
+    box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+#menu li > a {
+	display: block;
+	height: 100%;
+	line-height: 50px;
+	text-align: center;
+	transition: background-position 0.2s ease 0s;
+    box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+#menu li > div > a {
+	transition: background-position 0.1s ease 0s;
+    box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+#menu li > div > a:hover {
+	color: #FFF;
+	background-position: 100% 0;
+}
+
+#menu li.active a:active,
+#menu > div:not(.active):hover > a:active {
+	background: #000000;
+	color: #FFF;
+}
+
+#menu li,
+#menu li > a {
+	transition: background-color 0.2s ease;
+}
+
+#menu li {
+	position: relative;
+}
+
+#menu li > a {
+	text-transform: uppercase;
+}
+
+#menu li > div {
+	background: hwb(187 44% 26%);
+	display: none;
+	min-width: 200%;
+	overflow: hidden;
+	position: absolute;
+	padding: 10px;
+	z-index: 999;
+}
+
+#menu li:not(:first-of-type):not(:last-of-type) > div {
+	left: -50%;
+	border-radius: 0 0 3px 3px;
+}
+
+#menu li:first-of-type > div {
+	left: 0;
+	border-radius: 0 0 3px 0;
+}
+
+#menu li:last-of-type > div {
+	right: 0;
+	border-radius: 0 0 0 3px;
+}
+
+#menu li:hover > div {
+	display: block;
+}
+
+#menu li:hover,
+#menu li:hover > div {
+	background:  hwb(187 40% 23%);
+}
+
+#menu li > div > a {
+	background:  hwb(187 44% 26%) linear-gradient(to left, #bdb99b 50%, #8caffa 50%) repeat scroll 0 0 / 200% 100%;
+	border-radius: 2px;
+	display: block;
+	float: left;
+	margin: 2%;
+	padding: 8px 10px;
+	text-align: center;
+	transition: background-position 0.2s ease;
+	width: 46%;
+}
+
+#menu li > div > a:hover {
+	background-position: 100% 0;
+	cursor: pointer;
+}
+/*Here I wrote the clas for the titles of every topic */
+
+h3 {
+	font-size: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+}
+/*CSS for the image that is on the plot point*/
+.image {
+	display: block;
+	width: 100px;
+	height: auto;
+  }
+
+
+/*This three classes are for the Character point this css classed consist of when you hover on the the name of the character is shown */
+.container {
+  position: relative;
+  width: 50px;
+  margin: 30px;
+}
+
+
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100px;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+.characters {
+	display: flex; 
+	flex-wrap: wrap; 
+	justify-content: center; 
+}
+
+/*CSS for Last link which is at the end of the page*/
+a{
+	text-decoration: none;
+	background-color: hwb(187 44% 26%);;
+	color: #f1f1f1;
+}
+a:hover {
+	background-color:#8caffa ;
+}
+a:visited{
+	color: red
+}
+/*Here we do almast the same but in this vase for the footer  */
+#footerBanner{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    
+    background-size: cover;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerElement{
+    flex-basis: 20%;
+    color: rgb(0, 0, 0);
+    text-decoration:none;
+    display:block;
+    text-align: center;
+    margin: 5px;
+    position: relative;
+}
