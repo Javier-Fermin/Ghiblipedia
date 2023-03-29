@@ -1,12 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
--->
-
-
-
-<root>
-    
-</root>
-
+<ghiblipedia>
+    <films>
+        <film id="F01">
+            <title>Castle in the Sky</title>
+            <lenght>124</lenght>
+            <rDate>1986-08-02</rDate>
+            <ratings>4</ratings>
+            <director id="D01"/>
+            <characters>
+                <character id="C01"/>
+            </characters>  
+        </film>
+    </films>
+    <characters>
+        <character id="C01">
+            <name>Pazu</name>
+            <age>13</age>
+            <voiceActor id="VA01"/>
+            <description>https://ghibli.fandom.com/wiki/Pazu</description>
+            <MainCharacter id="F01"</MainCharacter>
+        </character> 
+    </characters>
+    <staff>
+        <director id="D01">
+            <name>Hayao Miyazaki</name>
+            <birthD>1941-01-05</birthD>
+            <filmsDone>
+                <film id="F01">
+            </filmsDone>
+            <biography>https://en.wikipedia.org/wiki/Hayao_Miyazaki</biography>
+            <voiceActors>
+                <voiceActor id="VA01">
+                    <name>Mayumi Tanaka</name>
+                    <birthD>1955-01-15</birthD>
+                    <filmsDone>
+                        <film id="F01">
+                    </filmsDone>
+                    <biography>https://es.wikipedia.org/wiki/Mayumi_Tanaka</biography>
+                </voiceActor>
+            </voiceActors>
+    </staff>    
+</ghiblipedia>
