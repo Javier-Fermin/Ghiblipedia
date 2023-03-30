@@ -3,12 +3,33 @@
     <films>
         <film id="F01">
             <title>Castle in the Sky</title>
-            <lenght>124</lenght>
+            <lenght>124 minutes</lenght>
             <rDate>1986-08-02</rDate>
-            <ratings>4</ratings>
+            <ratings>8</ratings>
+            <views>70000000</views>
+            <streamingPlatforms>
+                <name>HBO Max</name>
+            </streamingPlatforms>
             <director id="D01"/>
             <characters>
                 <character id="C01"/>
+                <character id="C02"/>
+                <character id="C03"/>
+            </characters>  
+        </film>
+        <film id="F02">
+            <title>Porco Rosso</title>
+            <lenght>94 minutes</lenght>
+            <rDate>1992-07-18</rDate>
+            <ratings>7.7</ratings>
+            <views>20000000</views>
+            <streamingPlatforms>
+                <name>Netflix</name>
+            </streamingPlatforms>
+            <director id="D01"/>
+            <characters>
+                <character id="C04"/>
+                 <character id="C05"/>
             </characters>  
         </film>
     </films>
@@ -18,26 +39,89 @@
             <age>13</age>
             <voiceActor id="VA01"/>
             <description>https://ghibli.fandom.com/wiki/Pazu</description>
-            <MainCharacter id="F01"</MainCharacter>
-        </character> 
+            <MainCharacter id="F01"/>
+        </character>
+        <character id="C02">
+            <name>Sheeta</name>
+            <age>13</age>
+            <voiceActor id="VA02"/>
+            <description>https://ghibli.fandom.com/wiki/Sheeta</description>
+        </character>
+        <character id="C03">
+            <name>Dola</name>
+            <age>54</age>
+            <voiceActor id="VA03"/>
+            <description>https://ghibli.fandom.com/wiki/Dola?so=search</description>
+        </character>
+        <character id="C04">
+            <name>Marco Pagot</name>
+            <age>37</age>
+            <voiceActor id="VA04"/>
+            <description>https://ghibli.fandom.com/wiki/Marco_Pagot</description>
+        <MainCharacter id="F02"/>
+        </character>
+         <character id="C05">
+            <name>Fio Piccolo</name>
+            <age>17</age>
+            <voiceActor id="VA05"/>
+            <description>https://ghibli.fandom.com/wiki/Fio_Piccolo?so=search</description>
+        </character>
     </characters>
-    <staff>
-        <director id="D01">
+    <workers>
+        <worker>
+            <director id="D01"/>
             <name>Hayao Miyazaki</name>
             <birthD>1941-01-05</birthD>
             <filmsDone>
-                <film id="F01">
+                <film id="F01"/>
+                <film id="F02"/>
             </filmsDone>
             <biography>https://en.wikipedia.org/wiki/Hayao_Miyazaki</biography>
-            <voiceActors>
-                <voiceActor id="VA01">
-                    <name>Mayumi Tanaka</name>
-                    <birthD>1955-01-15</birthD>
-                    <filmsDone>
-                        <film id="F01">
-                    </filmsDone>
-                    <biography>https://es.wikipedia.org/wiki/Mayumi_Tanaka</biography>
-                </voiceActor>
-            </voiceActors>
-    </staff>    
+        </worker>
+        <worker>
+            <voiceActor id="VA01"/>
+            <name>Mayumi Tanaka</name>
+            <birthD>1955-01-15</birthD>
+            <charactersDub>
+                <character id="C01"/>
+            </charactersDub>
+            <biography>https://es.wikipedia.org/wiki/Mayumi_Tanaka</biography>
+        </worker>
+        <worker>
+            <voiceActor id="VA02"/>
+            <name>Keiko Yokozawa</name>
+            <birthD>1952-09-02</birthD>
+            <charactersDub>
+                <character id="C02"/>
+            </charactersDub>
+            <biography>https://ghibli.fandom.com/wiki/Keiko_Yokozawa</biography>
+        </worker>
+        <worker>
+            <voiceActor id="VA03"/>
+            <name>Kotoe Hatsui</name>
+            <birthD>1929-01-08</birthD>
+            <charactersDub>
+                <character id="C03"/>
+            </charactersDub>
+            <biography>https://ghibli.fandom.com/wiki/Kotoe_Hatsui</biography>
+        </worker>
+        <worker>
+            <voiceActor id="VA04"/>
+            <name>Shūichirō Moriyama</name>
+            <birthD>1934-07-26</birthD>
+            <charactersDub>
+                <character id="C04"/>
+            </charactersDub>
+            <biography>https://en.wikipedia.org/wiki/Shūichirō_Moriyama</biography>
+        </worker>
+        <worker>
+            <voiceActor id="VA05"/>
+            <name>Akemi Okamura</name>
+            <birthD>1969-03-12</birthD>
+            <charactersDub>
+                <character id="C05"/>
+            </charactersDub>
+            <biography>https://en.wikipedia.org/wiki/Akemi_Okamura</biography>
+        </worker>
+    </workers>    
 </ghiblipedia>
