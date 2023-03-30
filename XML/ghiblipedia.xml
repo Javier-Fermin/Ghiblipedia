@@ -29,7 +29,38 @@
             <director id="D01"/>
             <characters>
                 <character id="C04"/>
-                 <character id="C05"/>
+                <character id="C05"/>
+                <character id="C06"/>
+            </characters>  
+        </film>
+        <film id="F03">
+            <title>Spirited Away</title>
+            <lenght>125 minutes</lenght>
+            <rDate>2001-07-20</rDate>
+            <ratings>8.6</ratings>
+            <views>350000000</views>
+            <streamingPlatforms>
+                <name>HBO Max</name>
+                <name>Prime Video</name>
+            </streamingPlatforms>
+            <director id="D01"/>
+            <characters>
+                <character id="C07"/>
+            </characters>  
+        </film>
+        <film id="F04">
+            <title>Howl's Moving Castle</title>
+            <lenght>119 minutes</lenght>
+            <rDate>2004-09-05</rDate>
+            <ratings>8.2</ratings>
+            <views>120000000</views>
+            <streamingPlatforms>
+                <name>HBO Max</name>
+                <name>Prime Video</name>
+            </streamingPlatforms>
+            <director id="D01"/>
+            <characters>
+                <character id="C08"/>
             </characters>  
         </film>
     </films>
@@ -58,13 +89,31 @@
             <age>37</age>
             <voiceActor id="VA04"/>
             <description>https://ghibli.fandom.com/wiki/Marco_Pagot</description>
-        <MainCharacter id="F02"/>
+            <MainCharacter id="F02"/>
         </character>
-         <character id="C05">
+        <character id="C05">
             <name>Fio Piccolo</name>
             <age>17</age>
             <voiceActor id="VA05"/>
             <description>https://ghibli.fandom.com/wiki/Fio_Piccolo?so=search</description>
+        </character>
+        <character id="C06">
+            <name>Donald Curtis</name>
+            <age>35</age>
+            <voiceActor id="VA06"/>
+            <description>https://ghibli.fandom.com/wiki/Donald_Curtis</description>
+        </character>
+         <character id="C07">
+            <name>Chihiro Ogino</name>
+            <age>10</age>
+            <voiceActor id="VA07"/>
+            <description>https://elviajedechihiro.fandom.com/es/wiki/Chihiro_Ogino</description>
+        </character>
+         <character id="C08">
+            <name>Sophie Hatter</name>
+            <age>18</age>
+            <voiceActor id="VA08"/>
+            <description>https://howlscastle.fandom.com/wiki/Sophie_Hatter</description>
         </character>
     </characters>
     <workers>
@@ -122,6 +171,33 @@
                 <character id="C05"/>
             </charactersDub>
             <biography>https://en.wikipedia.org/wiki/Akemi_Okamura</biography>
+        </worker>
+        <worker>
+            <voiceActor id="VA06"/>
+            <name>Akio Otsuka</name>
+            <birthD>1959-11-24</birthD>
+            <charactersDub>
+                <character id="C06"/>
+            </charactersDub>
+            <biography>https://en.wikipedia.org/wiki/Akio_Otsuka</biography>
+        </worker>
+        <worker>
+            <voiceActor id="VA07"/>
+            <name>Rumi Hiiragi</name>
+            <birthD>1987-08-01</birthD>
+            <charactersDub>
+                <character id="C07"/>
+            </charactersDub>
+            <biography>https://en.wikipedia.org/wiki/Rumi_Hiiragi</biography>
+        </worker>
+        <worker>
+            <voiceActor id="VA08"/>
+            <name>Chieko Baisho</name>
+            <birthD>1941-06-29</birthD>
+            <charactersDub>
+                <character id="C08"/>
+            </charactersDub>
+            <biography>https://en.wikipedia.org/wiki/Chieko_Baisho</biography>
         </worker>
     </workers>    
 </ghiblipedia>
