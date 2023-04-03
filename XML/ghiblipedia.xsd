@@ -39,6 +39,49 @@ Click nbfs://nbhost/SystemFileSystem/Templates/XML/XmlSchema.xsd to edit this te
         </xs:sequence>
         <xs:attribute name="id" type="xs:string"/>
     </xs:complexType>
+    <xs:complexType name="worker">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element name="voiceActor">
+                    <xs:complexType>
+                        <xs:attribute name="id" type="xs:string"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="director">
+                    <xs:complexType>
+                        <xs:attribute name="id" type="xs:string"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="birthD" type="xs:date"/>
+            <xs:choice>
+                <xs:element name="filmsDone">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="film">
+                                <xs:complexType>
+                                    <xs:attribute name="id" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="charactersDub">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="character">
+                                <xs:complexType>
+                                    <xs:attribute name="id" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+            <xs:element name="biography" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
     
     <xs:element name="ghiblipedia">
         <xs:complexType>
@@ -57,8 +100,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/XML/XmlSchema.xsd to edit this te
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
-                <xs:element name="staff">
-                    
+                <xs:element name="workers">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="worker" type="worker"/>
+                        </xs:sequence>
+                    </xs:complexType>
                 </xs:element>
             </xs:sequence>
         </xs:complexType>
