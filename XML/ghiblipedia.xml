@@ -108,12 +108,14 @@
             <age>10</age>
             <voiceActor id="VA07"/>
             <description>https://elviajedechihiro.fandom.com/es/wiki/Chihiro_Ogino</description>
+            <MainCharacter id="F03"/>
         </character>
          <character id="C08">
             <name>Sophie Hatter</name>
             <age>18</age>
             <voiceActor id="VA08"/>
             <description>https://howlscastle.fandom.com/wiki/Sophie_Hatter</description>
+            <MainCharacter id="F04"/>
         </character>
     </characters>
     <workers>
