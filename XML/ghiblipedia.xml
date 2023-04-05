@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ghiblipedia>
+<ghiblipedia xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ghiblipedia.xsd">
     <films>
         <film id="F01">
             <title>Castle in the Sky</title>
-            <lenght>124 minutes</lenght>
+            <length>124 minutes</length>
             <rDate>1986-08-02</rDate>
             <ratings>8</ratings>
             <views>70000000</views>
@@ -19,7 +20,7 @@
         </film>
         <film id="F02">
             <title>Porco Rosso</title>
-            <lenght>94 minutes</lenght>
+            <length>94 minutes</length>
             <rDate>1992-07-18</rDate>
             <ratings>7.7</ratings>
             <views>20000000</views>
@@ -35,7 +36,7 @@
         </film>
         <film id="F03">
             <title>Spirited Away</title>
-            <lenght>125 minutes</lenght>
+            <length>125 minutes</length>
             <rDate>2001-07-20</rDate>
             <ratings>8.6</ratings>
             <views>350000000</views>
@@ -50,7 +51,7 @@
         </film>
         <film id="F04">
             <title>Howl's Moving Castle</title>
-            <lenght>119 minutes</lenght>
+            <length>119 minutes</length>
             <rDate>2004-09-05</rDate>
             <ratings>8.2</ratings>
             <views>120000000</views>
@@ -70,7 +71,7 @@
             <age>13</age>
             <voiceActor id="VA01"/>
             <description>https://ghibli.fandom.com/wiki/Pazu</description>
-            <MainCharacter id="F01"/>
+            <mainCharacter id="F01"/>
         </character>
         <character id="C02">
             <name>Sheeta</name>
@@ -89,7 +90,7 @@
             <age>37</age>
             <voiceActor id="VA04"/>
             <description>https://ghibli.fandom.com/wiki/Marco_Pagot</description>
-            <MainCharacter id="F02"/>
+            <mainCharacter id="F02"/>
         </character>
         <character id="C05">
             <name>Fio Piccolo</name>
@@ -108,12 +109,14 @@
             <age>10</age>
             <voiceActor id="VA07"/>
             <description>https://elviajedechihiro.fandom.com/es/wiki/Chihiro_Ogino</description>
+            <mainCharacter id="F03"/>
         </character>
          <character id="C08">
             <name>Sophie Hatter</name>
             <age>18</age>
             <voiceActor id="VA08"/>
             <description>https://howlscastle.fandom.com/wiki/Sophie_Hatter</description>
+            <mainCharacter id="F04"/>
         </character>
     </characters>
     <workers>
