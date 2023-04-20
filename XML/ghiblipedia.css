@@ -1,0 +1,13 @@
+ /* This is the css for the body or in this case it is a kind of border */
+                    body{
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    background-color: white;
+                    background-size: cover;
+                    }
+                    /* The css for the table */
+                    table, th, td {
+                    border-collapse: collapse;
+                    border: 1px solid rgb(43, 42, 42);
+                    background-color: rgba(222, 217, 217, 0.542);
+                    margin: 0 auto;
+                    }  

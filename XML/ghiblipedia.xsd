@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XmlSchema.xsd to edit this template
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:complexType name="film">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="length" type="xs:string"/>
+            <xs:element name="rDate" type="xs:date"/>
+            <xs:element name="ratings" type="xs:float"/>
+            <xs:element name="views" type="xs:integer"/>
+            <xs:element name="streamingPlatforms">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="name" type="xs:string" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="director">
+                <xs:complexType>
+                    <xs:attribute name="id" type="xs:string"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="characters">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="character" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:attribute name="id" type="xs:string"/>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string"/>
+    </xs:complexType>
+    
+    <xs:complexType name="character">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="age" type="xs:integer"/>
+            <xs:element name="voiceActor">
+                <xs:complexType>
+                    <xs:attribute name="id" type="xs:string"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="mainCharacter" minOccurs="0">
+                <xs:complexType>
+                    <xs:attribute name="id" type="xs:string"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string"/>
+    </xs:complexType>
+    
+    <xs:complexType name="worker">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element name="voiceActor">
+                    <xs:complexType>
+                        <xs:attribute name="id" type="xs:string"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="director">
+                    <xs:complexType>
+                        <xs:attribute name="id" type="xs:string"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="birthD" type="xs:date"/>
+            <xs:choice>
+                <xs:element name="filmsDone">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="film" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="id" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="charactersDub">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="character">
+                                <xs:complexType>
+                                    <xs:attribute name="id" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+            <xs:element name="biography" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:element name="ghiblipedia">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="films">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="film" type="film" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="characters">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="character" type="character" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="workers">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="worker" type="worker" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

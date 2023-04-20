@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ghiblipedia>
+<?xml-stylesheet type="text/xsl" href="ghiblipedia.xsl"?>
+<ghiblipedia xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ghiblipedia.xsd">
     <films>
         <film id="F01">
             <title>Castle in the Sky</title>
@@ -70,7 +72,7 @@
             <age>13</age>
             <voiceActor id="VA01"/>
             <description>https://ghibli.fandom.com/wiki/Pazu</description>
-            <MainCharacter id="F01"/>
+            <mainCharacter id="F01"/>
         </character>
         <character id="C02">
             <name>Sheeta</name>
@@ -89,7 +91,7 @@
             <age>37</age>
             <voiceActor id="VA04"/>
             <description>https://ghibli.fandom.com/wiki/Marco_Pagot</description>
-            <MainCharacter id="F02"/>
+            <mainCharacter id="F02"/>
         </character>
         <character id="C05">
             <name>Fio Piccolo</name>
@@ -108,19 +110,19 @@
             <age>10</age>
             <voiceActor id="VA07"/>
             <description>https://elviajedechihiro.fandom.com/es/wiki/Chihiro_Ogino</description>
-            <MainCharacter id="F03"/>
+            <mainCharacter id="F03"/>
         </character>
          <character id="C08">
             <name>Sophie Hatter</name>
             <age>18</age>
             <voiceActor id="VA08"/>
             <description>https://howlscastle.fandom.com/wiki/Sophie_Hatter</description>
-            <MainCharacter id="F04"/>
+            <mainCharacter id="F04"/>
         </character>
     </characters>
     <workers>
         <worker>
-            <director id="D01"/>
+            <director id="D01">
             <name>Hayao Miyazaki</name>
             <birthD>1941-01-05</birthD>
             <filmsDone>
@@ -128,78 +130,87 @@
                 <film id="F02"/>
             </filmsDone>
             <biography>https://en.wikipedia.org/wiki/Hayao_Miyazaki</biography>
+            </director>
         </worker>
         <worker>
-            <voiceActor id="VA01"/>
+            <voiceActor id="VA01">
             <name>Mayumi Tanaka</name>
             <birthD>1955-01-15</birthD>
             <charactersDub>
                 <character id="C01"/>
             </charactersDub>
             <biography>https://es.wikipedia.org/wiki/Mayumi_Tanaka</biography>
+            </voiceActor>
         </worker>
         <worker>
-            <voiceActor id="VA02"/>
+            <voiceActor id="VA02">
             <name>Keiko Yokozawa</name>
             <birthD>1952-09-02</birthD>
             <charactersDub>
                 <character id="C02"/>
             </charactersDub>
-            <biography>https://ghibli.fandom.com/wiki/Keiko_Yokozawa</biography>
+            <biography>https://ghibli.fandom.com/wiki/Keiko_Yokozawa</biography>ç
+            </voiceActor>
         </worker>
         <worker>
-            <voiceActor id="VA03"/>
+            <voiceActor id="VA03">
             <name>Kotoe Hatsui</name>
             <birthD>1929-01-08</birthD>
             <charactersDub>
                 <character id="C03"/>
             </charactersDub>
             <biography>https://ghibli.fandom.com/wiki/Kotoe_Hatsui</biography>
+            </voiceActor>
         </worker>
         <worker>
-            <voiceActor id="VA04"/>
+            <voiceActor id="VA04">
             <name>Shūichirō Moriyama</name>
             <birthD>1934-07-26</birthD>
             <charactersDub>
                 <character id="C04"/>
             </charactersDub>
             <biography>https://en.wikipedia.org/wiki/Shūichirō_Moriyama</biography>
+            </voiceActor>
         </worker>
         <worker>
-            <voiceActor id="VA05"/>
+            <voiceActor id="VA05">
             <name>Akemi Okamura</name>
             <birthD>1969-03-12</birthD>
             <charactersDub>
                 <character id="C05"/>
             </charactersDub>
             <biography>https://en.wikipedia.org/wiki/Akemi_Okamura</biography>
+            </voiceActor>
         </worker>
         <worker>
-            <voiceActor id="VA06"/>
+            <voiceActor id="VA06">
             <name>Akio Otsuka</name>
             <birthD>1959-11-24</birthD>
             <charactersDub>
                 <character id="C06"/>
             </charactersDub>
             <biography>https://en.wikipedia.org/wiki/Akio_Otsuka</biography>
+            </voiceActor>
         </worker>
         <worker>
-            <voiceActor id="VA07"/>
+            <voiceActor id="VA07">
             <name>Rumi Hiiragi</name>
             <birthD>1987-08-01</birthD>
             <charactersDub>
                 <character id="C07"/>
             </charactersDub>
             <biography>https://en.wikipedia.org/wiki/Rumi_Hiiragi</biography>
+            </voiceActor>
         </worker>
         <worker>
-            <voiceActor id="VA08"/>
+            <voiceActor id="VA08">
             <name>Chieko Baisho</name>
             <birthD>1941-06-29</birthD>
             <charactersDub>
                 <character id="C08"/>
             </charactersDub>
             <biography>https://en.wikipedia.org/wiki/Chieko_Baisho</biography>
+            </voiceActor>
         </worker>
     </workers>    
 </ghiblipedia>
