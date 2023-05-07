@@ -14,8 +14,6 @@
                         <th> Ratings </th>
                         <th> Streaming Platforms </th>
                         <th> Director </th>
-                        <th> Characters </th>
-                        <th> Voice Actor </th>
                     </tr>
                     <tr>
                         <xsl:for-each select="films/film">
@@ -44,18 +42,34 @@
                                 <xsl:call-template name="ListDirectors">
                                     <xsl:with-param select="director/@id" name="codDirector"/>
                                 </xsl:call-template> 
+                            </tr>
+                        </xsl:for-each>
+                    </tr>
+                </table>
+                <br/>
+                <br/>
+                <table>
+                    <tr>
+                        <th> Title </th>
+                        <th> Characters </th>
+                        <th> Voice Actor </th>
+                    </tr>
+                    <tr>
+                        <xsl:for-each select="films/film">
+                            <tr>
                                 <td>
-                                    <xsl:call-template name="ListCharacter">
-                                        <xsl:with-param select="characters/character/@id" name="codCharacter"/>
-                                    </xsl:call-template>
+                                    <xsl:value-of select="title"/>
                                 </td>
-                                 
+                                <td>
+                                <xsl:call-template name="ListCharacter">
+                                    <xsl:with-param select="characters/character/@id" name="codCharacter"/>
+                                </xsl:call-template>
+                                </td>
                                 <td>
                                     <xsl:call-template name="ListVoiceActors">
                                         <xsl:with-param select="characters/character/@id" name="codCharacter"/>
                                     </xsl:call-template>
                                 </td>
-                               
                             </tr>
                         </xsl:for-each>
                     </tr>
@@ -66,7 +80,6 @@
     <xsl:template name ="ListDirectors">
         <xsl:param name ="codDirector"/>
         <xsl:for-each select="/ghiblipedia/workers/worker/director[@id=$codDirector]">
-           
             <td>
                 <xsl:value-of select="name"/>
             </td>
