@@ -47,7 +47,6 @@
                     </tr>
                 </table>
                 <br/>
-                <br/>
                 <table>
                     <tr>
                         <th> Title </th>
