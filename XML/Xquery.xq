@@ -17,4 +17,7 @@ replace value of node
 doc(
   "ghiblipedia.xml"
 )/ghiblipedia/films/film[@id="F03"]/views
-with 1000000000000000000
+with 1000000000000000000,
+
+delete node
+doc ("ghiblipedia.xml")/ghiblipedia/films/film[title="Spirited Away"]
