@@ -5,11 +5,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
 -->
 <html>
     <head>
-		<link rel="stylesheet" type="text/css" href="./CSS/MI.css"/>
+        <script src="../JS/mod.js"></script>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="shortcut icon" href="Img/ponyoLogo.png" type="image/x-icon">
+		<link rel="shortcut icon" href="../Img/ponyoLogo.png" type="image/x-icon">
 		<title>Ghiblipedia</title>
 	</head>
     <body>
@@ -21,10 +21,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                     <option value="CITS">Castle In The Sky</option>
                     <option value="PR">Porko Rosso</option>
                 </select></br>
+                
                 <label for="rating">Rating</label></br>
                 <input type="text" id="rating" name="rating"><br>
                 <label for="views">Views</label></br>
                 <input type="text" id="views" name="views"></br>
+                
                 <input type="checkbox" id="HBO" name="HBO">
                 <label for="HBO">HBO</label>
                 <input type="checkbox" id="Netflix" name="Netflix">
@@ -33,8 +35,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                 <label for="PrimeVideo">PrimeVideo</label>
                 <input type="checkbox" id="Disney" name="Disney">
                 <label for="Disney">Disney+</label></br>
-                <input type="submit" value="Update">
+                
+                <input type="button" value="Update" onclick="checkForm()">
             </form>
         </div>
+        <a href="../MainIndex.html">Index</a>
     </body>
 </html>
