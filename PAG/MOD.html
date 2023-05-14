@@ -14,7 +14,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
 	</head>
     <body>
         <div>
-            <form>
+            <form method="get" action="destination.php">
                 <select id="movies" name="movies">
                     <option value="HMC">Howl Moving Castle</option>
                     <option value="SA">Spirited Away</option>
@@ -36,7 +36,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                 <input type="checkbox" id="Disney" name="Disney">
                 <label for="Disney">Disney+</label></br>
                 
-                <input type="button" value="Update" onclick="checkForm()">
+                <input type="submit" value="Update" onclick="checkForm()">
             </form>
         </div>
         <a href="../MainIndex.html">Index</a>
